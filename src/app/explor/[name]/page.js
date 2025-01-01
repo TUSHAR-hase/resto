@@ -54,8 +54,8 @@ const Page = (props) => {
             </div>
             <div className="foodmainbox">
                 {
-                    fooddetail.map((item) => (<div className="foodbox">
-                         <img  className="foodboximg"src={item.path}/>
+                    fooddetail.map((item,index) => (<div key={index} className="foodbox">
+                         <img alt="Company Logo" className="foodboximg"src={item.path}/>
                         <div className="foodboxname">{item.name}</div>
                         <div className="foodboxprice"> Rs.{item.price}</div>
                         {/* <img  src={item.path}/> */}

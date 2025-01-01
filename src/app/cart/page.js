@@ -48,8 +48,8 @@ const Cart = () => {
         </div>
         <div className="foodmainbox">
           {
-            cartstorage.map((item) => (<div className="foodbox">
-              <img className="foodboximg" src={item.path} />
+            cartstorage.map((item,index) => (<div key={index} className="foodbox">
+              <img alt="Company Logo" className="foodboximg" src={item.path} />
               <div className="foodboxname">{item.name}</div>
               <div className="foodboxprice"> Rs.{item.price}</div>
 

@@ -34,8 +34,8 @@ const DeliveryDashboard=()=>{
             <Deliveryheader></Deliveryheader>
             <div className="toporderbox">
             {
-                order.map((item) => (
-                    <div className="orderbox">
+                order.map((item,index) => (
+                    <div key={index} className="orderbox">
                         <div className="restoname">
                             {item.data.name}
                         </div>
