@@ -13,7 +13,7 @@ const Cart = () => {
   useEffect(() => {
     removecart();
 
-  }, [])
+  }, [cartnumber,cartstorage])
   const removecart = (id) => {
     let localdata = cartstorage.filter((item) => {
       return item._id != id

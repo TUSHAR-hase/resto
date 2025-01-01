@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Header from '../header/page';
 import './login.css';
 import { useRouter } from 'next/navigation';
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=optional" />
 const Login=()=>{
     const [email,setemail]=useState();
     const [password,setpassword]=useState();
@@ -60,7 +60,7 @@ const Login=()=>{
     <div>
        <button onClick={logindata} id="loginbutton">Login</button>
     </div>
-    <div>"You have no accout ? sign up</div>
+    {/* <div>'You have no accout ? sign up'</div> */}
 
 </div>
         </div>
