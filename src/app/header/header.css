@@ -1,0 +1,59 @@
+.nav{
+    height: 37px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+}
+.navlink{
+    font-family: sans-serif;
+    margin-left: 25px;
+    text-decoration: none
+}
+#logo{
+    margin-left: 40px;
+    color:blue;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+#Link{
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 23px;
+}
+#Link:hover{
+  
+    transition-duration: 1s;
+    cursor: pointer;
+    color: blue;
+}
+.rightnav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+#button{
+    background-color: blue;
+    font-family: sans-serif;
+    text-decoration: none;
+    height: 37px;
+    width: 94px;
+    color: white;
+    border: navajowhite;
+    margin-left: 37px;
+    margin-right: 37px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+#button:hover{
+    color: white;
+    background-color: blue;
+    transform-style: preserve-3d;
+    transition-duration: 1s;
+    cursor: pointer;
+}

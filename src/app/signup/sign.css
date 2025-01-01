@@ -1,0 +1,208 @@
+/* .sign_input{
+    height: 30px;
+    width: 245px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding-left: 15px;
+}
+#container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+#container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 260px;
+}
+#h1sign{
+    font-family: sans-serif;
+    color: blue;    font-weight: bolder;
+    font-size: 37px;
+}
+#top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+}
+#signbutton{
+    background-color: blue;
+    font-family: sans-serif;
+    text-decoration: none;
+    height: 39px;
+    width: 253px;
+   
+    color: white;
+    border: navajowhite;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+#signbutton:hover{
+    color: white;
+    background-color: darkblue;
+    transform-style: preserve-3d;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+span{
+    color: red;
+} */
+/* Input Fields */
+/* General Styles for Input Fields */
+.sign_input {
+    height: 35px;
+    width: 250px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.sign_input:focus {
+    outline: none;
+    background-color: #e0f7fa; /* Light background color on focus */
+    box-shadow: 0 0 5px rgba(66, 71, 229, 0.7); /* Focus effect */
+}
+
+/* Remove Box Shadows and Background from Containers */
+#container1, #container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    /* Remove background and box-shadow */
+    padding: 0; /* No padding */
+}
+
+/* Main Layout Styles */
+/* #main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 70px;
+    animation: fadeInUp 0.5s ease-out forwards;
+} */
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 65px;
+    margin-left: 32%;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* White shadow effect */
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Heading Styles */
+#h1sign {
+    font-family: sans-serif;
+    color: blue;
+    font-weight: bolder;
+    font-size: 37px;
+    text-shadow: none; /* Remove text shadow */
+}
+
+/* Button Styles */
+#signbutton {
+    background-color: blue;
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    width: 253px;
+    height: 39px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#signbutton:hover {
+    background-color: darkblue;
+    transform: translateY(-3px);
+}
+
+/* Error Message Styling */
+span {
+    color: red;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #container1, #container2, #main {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    #h1sign {
+        font-size: 1.8rem;
+    }
+
+    .sign_input {
+        width: 200px;
+        height: 35px;
+    }
+
+    #signbutton {
+        width: 200px;
+    }
+}
+

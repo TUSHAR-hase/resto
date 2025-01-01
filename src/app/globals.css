@@ -1,0 +1,187 @@
+table,th,td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+   
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+td button{
+    margin-left: 10px;
+    background-color: blue;
+    color: white;
+    height: 35px;
+    width: 72px;
+    border: none;
+    border-radius: 24px;
+    font-weight: 500;
+    
+    font-size: 15px
+}
+td button:hover{
+    color: white;
+    background-color: darkblue;
+    transform-style: preserve-3d;
+    transition-duration: 1s;
+    cursor: pointer;
+    z-index: 1;
+   
+}
+.tablebox{
+margin-top: 35px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+table img{
+    height: 155px;
+    width: 230px;
+}
+.topbanner{
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-color: #35354d;
+    background-image: url("/images/th.jpeg");
+    background-blend-mode: multiply;
+}
+.topname{
+    padding-top: 108px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+.foodmainbox{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 40px;
+}
+.foodbox{
+    background-color:#2b00ff1a;
+    height: 390px;
+    width: 300px;
+    border-radius: 30px;
+}
+.foodbox:hover{
+    box-sizing: inherit;
+    /* background-color: blue; */
+} 
+.foodboximg{
+    padding: 10px;
+    
+        height: 256px;
+        width: 279px;
+        border-radius: 60px;
+
+}
+.description{
+    font-weight: lighter;
+    color: aliceblue;
+    font-family: sans-serif;
+    margin-left: 25px;
+}
+.foodboxname{
+    font-size: 24px;
+    margin-left: 21px;
+    font-weight: 500;
+}
+.foodboxprice{
+    font-size: 23px;
+ text-align: right;
+    margin-right: 24px;
+    font-weight: 700;
+}
+.cartbutton{
+    height: 38px;
+    width: 85px;
+    color: white;
+    font-family: sans-serif;
+    background-color: blue;
+    border: none;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-left: 21px;
+}
+.cartbutton:hover{
+    background-color: white;
+    color: black;
+}
+.totalbox{
+    background-color: #2b00ff1a;
+    /* text-align: left; */
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    border-end-start-radius: 31px;
+    border-bottom-left-radius: 3pc;
+    border-top-right-radius: 4pc;
+    height: 300px;
+    width: 450px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.minitotalbox{
+    margin-top: 28px;
+    margin-left: 57px;
+}
+.minitotalbox span{
+    margin-left: 17px;
+}
+.toptotal{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.cartorderbutton{
+    margin-left: 167px;
+    background-color: blue;
+    color: white;
+    height: 43px;
+    width: 112px;
+    border: none;
+    border-radius: 24px;
+    font-weight: 550;
+    font-size: 18px;
+    margin-top: 21px;
+}
+.cartorderbutton:hover{
+    color: black;
+    background-color: white;
+}
+.h1head{
+    font-family: sans-serif;
+    color: blue;    font-weight: bolder;
+    font-size: 37px;
+}
+.tophead{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+}
+.margin{
+    margin-top: -57px;
+}
+.marginlogin{
+    margin-top: -116px;
+}
+.togaluserbutton{
+    border: none;
+    background-color: white;
+    color: blue;
+    font-size: 17px;
+    /* display: flex; */
+   
+    text-align: center;
+}
+.togalbox{
+    text-align: center;
+    margin-top: 30px;
+}

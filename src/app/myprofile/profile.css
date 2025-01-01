@@ -1,0 +1,28 @@
+.orderbox{
+    background-color: #babae3;
+    border-radius: 15px;
+    text-align: start;
+    padding-left: 34px;
+    display: flex;
+    flex-direction: column;
+    width: 349px;
+    gap: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-bottom: 14px;
+}
+.toporderbox{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.restoname{
+    font-size: 32px;
+    font-weight: 600;
+    color: blue;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 10px;
+}

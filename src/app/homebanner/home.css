@@ -1,0 +1,239 @@
+*:focus{
+   border: none;
+}
+#bgimg{
+   /* height: 231px;
+   width: 331px; */
+
+   border-radius: 125px;
+   margin-top: 33px
+}
+.mainbox{
+ 
+ display: flex;
+margin-top: 32px;
+margin-left: 8px;
+   font-family: sans-serif;
+   width: 100%;
+ 
+  
+}
+.bg{
+   background-image: url("https://tse3.mm.bing.net/th?id=OIP.iK04iEQXbpOVx4mo6ZOyyQAAAA&pid=Api&P=0&h=180");
+   background-blend-mode: multiply;
+   image-rendering: auto;
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color:  #222737;
+   border-radius: 50px;
+ margin-top: 35px;
+    height: 500px;
+}
+
+.box1{
+   display: flex;
+    justify-content: center;
+    align-items: normal;
+flex-direction: column;
+    margin-left: 9rem;
+}
+#h1{
+   font-family: sans-serif;
+   font-size: 46px;
+   color: white;
+   /* z-index: 1; */
+}
+#pizza{
+   font-size: 60px;
+   font-family: sans-serif;
+   font-weight: bolder;
+   color: blue;
+   z-index: 1;
+}
+#button1{
+   background-color: blue;
+   font-family: sans-serif;
+   text-decoration: none;
+   height: 47px;
+   width: 124px;
+  
+   color: white;
+   border: navajowhite;
+ 
+   font-size: 17px;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   border-radius: 20px;
+}
+#buttonbox{
+   margin-right: 209px;
+   margin-top: 39px;
+}
+.input-wrepper{
+   height: auto;
+padding-top: 35px;
+display: flex;
+ height: fit-content;
+   align-items: center;
+   justify-content: center;
+}
+#searchfood{
+   height: 40px;
+   /* border: 1px solid; */
+   text-align: start;
+   padding-left: 32px;
+   width: 232px;
+   border: none;
+   border-start-start-radius: 15px;
+
+}
+#searchresto{
+   text-align: start;
+   padding-left: 32px;
+ border: none;
+ width: 26rem;
+ height: 40px;
+ border-end-end-radius: 15px;
+ border-left: 1px solid
+}
+.location-list{
+   position: absolute;
+   
+   margin-left: -266px;
+   text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: white;
+    
+    padding: 0px;
+}
+.location-list li{
+   padding: 6px;
+    border: 1px solid;
+    border-collapse: collapse;
+    padding-top: 3px;
+    padding-right: 63px;
+    /* margin-top: 4px; */
+}
+/* .resturentbox{ */
+   /* align-items: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; */
+ 
+/* } */
+/* .resturentbox1{
+
+   color: white;
+   font-family: sans-serif;
+   background-color:  blue;
+   height: 223px;
+   width: 238px;
+   border-radius: 19px;
+   margin-left: 18px;
+   margin-top: 14px;
+ 
+   padding: 23px;
+}
+.resturent3{
+margin-top: 40px;
+
+} */
+ /* General Styling */
+body {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: #f4f4f9;
+}
+
+/* Restaurant Container */
+.resturentbox {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+   padding: 30px;
+}
+
+/* Individual Restaurant Card */
+.resturentbox1 {
+   background: linear-gradient(135deg, #4a2aff, #004aad);
+   color: #ffffff;
+   height: 250px;
+   width: 270px;
+   border-radius: 15px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   cursor: pointer;
+   overflow: hidden;
+   position: relative;
+}
+
+/* Hover Effects */
+.resturentbox1:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Restaurant Name */
+.resturent-name {
+   font-size: 22px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   text-transform: capitalize;
+}
+
+/* Contact Info */
+.resturent-contact {
+   font-size: 16px;
+   margin-bottom: 15px;
+}
+
+/* Restaurant Details */
+.resturent-details {
+   font-size: 14px;
+   line-height: 1.5;
+   text-align: left;
+   padding: 10px;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 10px;
+}
+
+/* Gradient Overlay for Visual Effect */
+.resturentbox1::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+   border-radius: 15px;
+   z-index: 0;
+   transition: opacity 0.3s ease;
+}
+
+/* Content inside the box */
+.resturentbox-content {
+   z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .resturentbox1 {
+      width: 100%;
+   }
+}
