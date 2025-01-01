@@ -22,7 +22,7 @@ const Profile = () => {
         <div className="toporderbox">
             {
                 order.map((item,index) => (
-                    <div key={index} className="orderbox">
+                    <div  key={item.id} className="orderbox">
                         <div className="restoname">
                             {item.data.name}
                         </div>

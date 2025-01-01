@@ -77,7 +77,7 @@ console.log(responce)
                 <tbody>
                     {
                         fooditem && fooditem.map((item, key) => (
-                            <tr key={key}>
+                            <tr key={item.id}>
                                 <td>{key + 1}</td>
                                 <td>{item.name}</td>
                                 <td>{item.price}</td>

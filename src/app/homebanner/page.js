@@ -79,8 +79,8 @@ const router=useRouter();
          </div>
          <div className="resturentbox">
    {
-      resturent.map((item,index) => (
-         <div key={index}
+      resturent.map((item) => (
+         <div key={item.id}
             onClick={() => router.push(`explor/${item.name}?id=${item._id}`)} 
             className="resturentbox1"
          >
