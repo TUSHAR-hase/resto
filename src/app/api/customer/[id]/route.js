@@ -6,6 +6,7 @@ import { foodsSchema } from "../../../lib/foods";
 
 export async function  GET(req,resp){
     const id=resp.params.id
+    // const { id } = req.params; 
 await mongoose.connect(connectionstr,{useNewUrlParser:true});
 const result=await signupSchema.findOne({_id:id})
 const foodsdetail=await foodsSchema.find({resto_id:id})

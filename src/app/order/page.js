@@ -17,7 +17,7 @@ const Order = () => {
         if (!Total) {
             router.push('/')
         }
-    }, [Total,removecartdata])
+    }, [Total])
    
     const placeorder = async () => {
         const user_id = JSON.parse(localStorage.getItem('user'))._id

@@ -80,7 +80,7 @@ const router=useRouter();
          <div className="resturentbox">
    {
       resturent.map((item) => (
-         <div key={item.id}
+         <div key={item._id}
             onClick={() => router.push(`explor/${item.name}?id=${item._id}`)} 
             className="resturentbox1"
          >

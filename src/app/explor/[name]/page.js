@@ -1,15 +1,21 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useEffect, useState,use } from "react";
 import Customerheader from "../../customercomponent/customerheader";
 
 const Page = (props) => {
     const [resturentdetail, setresturentdetail] = useState([]);
     const [fooddetail, setfooddetail] = useState([]);
-    const name = props.params.name;
+    // const name = props.params.name;
+    // const name = params.name; 
+    const params = use(props.params);
+    const name = params.name; 
     const [cartitem,setcartitem]=useState();
     const[cartstorage,setcartsorage]=useState(JSON.parse(localStorage.getItem('cart')));
     const[cartid,setcartid]=useState( cartstorage?()=>cartstorage.map((item)=>{return item._id} ):[]);
-    const id = props.searchParams.id
+    // const id = props.searchParams.id
+    // const id = searchParams.id;
+    const searchParams = use(props.searchParams);
+    const id = searchParams.id; 
     const[removecartdata,setremovecartdata]=useState();
     console.log(cartid)
     useEffect(() => {
@@ -54,7 +60,7 @@ const Page = (props) => {
             </div>
             <div className="foodmainbox">
                 {
-                    fooddetail.map((item,index) => (<div  key={item.id}
+                    fooddetail.map((item,) => (<div  key={item._id}
                      className="foodbox">
                          <img alt="Company Logo" className="foodboximg"src={item.path}/>
                         <div className="foodboxname">{item.name}</div>
