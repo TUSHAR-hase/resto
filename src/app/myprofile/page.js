@@ -2,14 +2,14 @@
 import { useEffect, useState } from "react";
 import Customerheader from "../customercomponent/customerheader";
 import './profile.css';
-import { FaUser, FaMapMarkerAlt, FaPhone, FaUtensils, FaMoneyBill, FaCheckCircle, FaTruck, FaClock, FaStar, FaHistory, FaUserCircle } from "react-icons/fa";
-import Image from 'next/image';
+import { FaUser, FaMapMarkerAlt, FaPhone, FaUtensils, FaCheckCircle, FaTruck, FaClock, FaStar, FaHistory, FaUserCircle } from "react-icons/fa";
+// import Image from 'next/image';
 const Profile = () => {
     const [userData, setUserData] = useState(null);
     const [orders, setOrders] = useState([]);
     const [activeTab, setActiveTab] = useState('orders');
     const [isLoading, setIsLoading] = useState(true);
-     const [foodItems, setFoodItems] = useState({}); 
+    //  const [foodItems, setFoodItems] = useState({}); 
  const [error, setError] = useState(null);
      useEffect(() => {
         const user = JSON.parse(localStorage.getItem('user') || '{}');

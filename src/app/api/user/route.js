@@ -18,7 +18,7 @@ export async function POST(req){
       console.log(error);
    }
 }
-export async function GET(req){
+export async function GET(){
    let success=false
     await mongoose.connect(connectionstr,{useNewUrlParser:true})
     const result= await userSchema .find()

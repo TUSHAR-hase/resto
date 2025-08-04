@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Customerheader from "./customercomponent/customerheader";
 import Homebanner from "./homebanner/page";
 

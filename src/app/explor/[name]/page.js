@@ -2,18 +2,18 @@
 import { use, useEffect, useState } from "react";
 import Customerheader from "../../customercomponent/customerheader";
 import { FaStar, FaUtensils, FaClock, FaMapMarkerAlt, FaShoppingCart, FaRegClock, FaHeart, FaShareAlt } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
 const Page = (props) => {
     const [resturentdetail, setresturentdetail] = useState({});
     const [fooddetail, setfooddetail] = useState([]);
     const [cartitem, setcartitem] = useState();
-    const [cartstorage, setcartsorage] = useState(
-      typeof window !== 'undefined' 
-        ? JSON.parse(localStorage.getItem('cart')) || [] 
-        : []
-    );
+    // const [cartstorage, setcartsorage] = useState(
+    //   typeof window !== 'undefined' 
+    //     ? JSON.parse(localStorage.getItem('cart')) || [] 
+    //     : []
+    // );
     const [cartid, setcartid] = useState(
       cartstorage.length > 0 
         ? cartstorage.map(item => item._id) 

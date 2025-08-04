@@ -7,7 +7,7 @@ import { MdRestaurantMenu } from 'react-icons/md';
 
 const Customerheader = () => {
     const [cartnumber, setcartnumber] = useState(0);
-    const [cartdata, setcartdata] = useState([]);
+    // const [cartdata, setcartdata] = useState([]);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [user, setuser] = useState(null);
     const [scrolled, setScrolled] = useState(false);

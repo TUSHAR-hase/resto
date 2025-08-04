@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Customerheader from "../customercomponent/customerheader";
 import { Delivery_charge, Tex } from "../constant";
 import { useRouter } from "next/navigation";
-import { FaUser, FaMapMarkerAlt, FaPhone, FaUtensils, FaReceipt, FaTruck, FaMoneyBillWave, FaCreditCard, FaClock } from "react-icons/fa";
+import { FaUser, FaMapMarkerAlt, FaUtensils, FaReceipt, FaTruck, FaMoneyBillWave, FaCreditCard, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Order = () => {
@@ -11,7 +11,7 @@ const Order = () => {
     const [subtotal, setSubtotal] = useState(0);
     const [taxAmount, setTaxAmount] = useState(0);
     const [totalAmount, setTotalAmount] = useState(0);
-    const [estimatedTime, setEstimatedTime] = useState("30-45 mins");
+    // const [estimatedTime, setEstimatedTime] = useState("30-45 mins");
     const [paymentMethod, setPaymentMethod] = useState("cash");
     const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();

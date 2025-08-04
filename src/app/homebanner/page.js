@@ -9,8 +9,8 @@ const Homebanner = () => {
   const [location, setlocation] = useState('');
   const [resturent, setresturent] = useState([]);
   const [showlocation, setshowlocation] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [isFocused, setIsFocused] = useState(false);
+  // const [searchTerm, setSearchTerm] = useState('');
+  // const [isFocused, setIsFocused] = useState(false);
   const [activeCategory, setActiveCategory] = useState('all');
   const router = useRouter();
   const [loadingRestaurant, setLoadingRestaurant] = useState(null); 

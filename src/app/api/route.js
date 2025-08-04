@@ -8,7 +8,7 @@ import { signupSchema } from "../lib/signupModal";
 export async function GET(){
     await mongoose.connect(connectionstr,{useNewUrlParser:true})
 
-console.log(data);
+// console.log(data);
     return NextResponse.json({result:true})
 }
 export async function POST(req){
