@@ -1,59 +1,49 @@
-.nav{
-    height: 37px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 20px;
-    font-family: sans-serif;
-    text-decoration: none;
+
+/* Add this to your header.css file */
+.nav-link {
+    position: relative;
     font-weight: 500;
-    align-items: center;
+    color: #4b5563;
+    transition: color 0.3s ease;
 }
-.navlink{
-    font-family: sans-serif;
-    margin-left: 25px;
-    text-decoration: none
+
+.nav-link:hover {
+    color: #fcaa45;
 }
-#logo{
-    margin-left: 40px;
-    color:blue;
-    font-weight: bolder;
-    font-size: xx-large;
+
+.nav-link.active {
+    color: #ffbb5b;
 }
-#Link{
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 23px;
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #dc8126;
+    transition: width 0.3s ease;
 }
-#Link:hover{
-  
-    transition-duration: 1s;
-    cursor: pointer;
-    color: blue;
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
 }
-.rightnav{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: auto;
+
+.mobile-nav-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #4b5563;
+    transition: all 0.3s ease;
 }
-#button{
-    background-color: blue;
-    font-family: sans-serif;
-    text-decoration: none;
-    height: 37px;
-    width: 94px;
-    color: white;
-    border: navajowhite;
-    margin-left: 37px;
-    margin-right: 37px;
-    font-size: 20px;
-    border-radius: 8px;
-}
-#button:hover{
-    color: white;
-    background-color: blue;
-    transform-style: preserve-3d;
-    transition-duration: 1s;
-    cursor: pointer;
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+    color: #dc8426;
+    background-color: #fef2f2;
 }
