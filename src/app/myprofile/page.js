@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Customerheader from "../customercomponent/customerheader";
 import './profile.css';
 import { FaUser, FaMapMarkerAlt, FaPhone, FaUtensils, FaMoneyBill, FaCheckCircle, FaTruck, FaClock, FaStar, FaHistory, FaUserCircle } from "react-icons/fa";
-
+import Image from 'next/image';
 const Profile = () => {
     const [userData, setUserData] = useState(null);
     const [orders, setOrders] = useState([]);

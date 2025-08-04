@@ -168,7 +168,8 @@ const Login = () => {
                         
                         <div className="mt-8 text-center">
                             <p className="text-gray-600">
-                                Don't have an account?{' '}
+                               Don&apos;t have an account?
+
                                 <button 
                                     onClick={() => router.push("/signup")}
                                     className="text-amber-600 font-medium hover:text-orange-600 transition-colors"
