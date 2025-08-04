@@ -1,4 +1,8 @@
 module.exports = {
+    env: {
+    browser: true,
+    es2021: true,
+  },
   extends: ["next", "next/core-web-vitals", "eslint:recommended", "plugin:react/recommended"],
   rules: {
     "react/no-unescaped-entities": "off",         // single quotes (') ke warning band
